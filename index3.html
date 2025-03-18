@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept/Not</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <center>
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2yVRXwofRP12ePa62k4ogGv-1Z3B44tBUwQT0YCMt4aDwBxaqs7MnRBAfPFGYJr6I-c&usqp=CAU" alt="Last Chance">
+            <h1>It`s Your Last Chance Please Think Again!</h1>
+            <div class="btn">
+            <button><a href="index4.html">Yes</a></button>
+            <button class="move-random" onclick="moveButton(this)">No</button>
+        </div>
+    </center>
+    </main>
+</body>
+<script>
+    function moveRandomEl(elm) {
+        elm.style.position = "absolute";
+        elm.style.top = Math.floor(Math.random() * 90) + "%"; 
+        elm.style.left = Math.floor(Math.random() * 90) + "%";
+    }
+
+    function moveButton(button) {
+        moveRandomEl(button);
+    }
+</script>
+</html>
